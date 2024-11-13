@@ -5,7 +5,7 @@ const http = require("http");
 //1 kirish kodlar
 app.use(express.static("public")); //css va imaglar turadi
 app.use(express.json()); /// kirib kelyotgan datani objectga ogdarib beradi
-app.use(express.urlencoded({extetnded:true})); // htmldan kelgan forumlarni neglekt qiladi agar buni yozmasak htmldan kelyotgan codelarni qabul qilmaydi vazifasi shu
+app.use(express.urlencoded({extended: true })); // htmldan kelgan forumlarni neglekt qiladi agar buni yozmasak htmldan kelyotgan codelarni qabul qilmaydi vazifasi shu
 
 
 
@@ -24,16 +24,37 @@ app.set("view engine", "ejs");
 
 //4 ROUTERLAR BN ISHLASH  ROUTER KODALRINI BOLIMI
 ///
-app.get("/", function(req, res) {
-  res.end(" hello world by UMAR DEVELOPER");  
-});
+// app.get("/", function(req, res) {
+//   res.end(" hello world by UMAR DEVELOPER");  
+// });
 
-app.get("/gift", function(req, res) {
-    res.end(" SIZ SOVGALAR SAHIFASIDASIZ");  
-  });
+// app.get("/gift", function(req, res) {
+//     res.end(" SIZ SOVGALAR SAHIFASIDASIZ");  
+//   });
+
+// const server = http.createServer(app);
+// let PORT = 4000;
+// server.listen( PORT, function () {
+// console.log(`This server is running successfully on  port: ${PORT}`);
+// });
+
+
+////// BSSR ==> BACKEND SERVER SITE RENDERING 
+///// REACT YANI BURAKDA
+///// GITDA ISHLADIK
+
+//////////==============================/////////////////////////
+/////////////////DARS 19 ///////////////////////////////////////
+app.post("/create-item", (req,res) => {
+console.log(req.body);
+res.json({test:"success"});
+});
+app.get('/', function (req, res) {
+    res.render("Harid")
+} ); 
 
 const server = http.createServer(app);
-let PORT = 4000;
-server.listen( PORT, function () {
-console.log(`This server is running successfully on  port: ${PORT}`);
+let PORT = 1000;
+server.listen(PORT, function (){
+   console.log(`this server sucsesfully  running on port ${PORT}`) 
 });
