@@ -1,0 +1,14 @@
+{
+"name": "UMAR",
+"profession": "Software Engineer",
+"age": "22",
+"residence": "South Korea",
+"adress": "BUSAN",
+"language": ["Uzbek","KOREAN", "RUSSIAN", "ENGLISH" ],
+"skills":["HTML","CSS", "JS", "NODEJS", "JS", "NODEJS" ],
+"extra_skills": ["VIDEO EDITING","CYCLING", "RUNNING", "JIU-JITSU"],
+"work_place": "GOOGLE",
+"service_desc": "LOREM1SAAAAAAAAFSASDFSDFFFFFFFFFFFFFFFFFSADADFFFFFFFFFF",
+"about_me": "HELLO WORLD",
+"city": "NAVOIY"
+}
