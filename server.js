@@ -74,6 +74,7 @@ const express = require("express");
 const app = express(); /// expresnijng app objectini yuboradi express serverini yuboradi
 const http = require("http");
 const fs = require("fs");
+app.use(express.static('public'));
 
 let user;
 fs.readFile("database/user.json", "utf8", (err, data) => {
