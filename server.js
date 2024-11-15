@@ -53,6 +53,7 @@
 //     res.render("Harid")
 // } ); 
 
+<<<<<<< HEAD
 // const server = http.createServer(app);
 // let PORT = 3000;
 // server.listen(PORT, function (){
@@ -114,3 +115,10 @@ app.post("/create-item", (req,res) => {
        console.log(`this server sucsesfully  running on port ${PORT}`) 
     });
     
+=======
+const server = http.createServer(app);
+let PORT = 3000;
+server.listen(PORT, function (){
+   console.log(`this server sucsesfully  running on port ${PORT}`) 
+});
+>>>>>>> c522139bef0b2505d3868f538ff1d51280dfc7a6
