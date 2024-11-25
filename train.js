@@ -103,20 +103,27 @@
 // MASALAN countLetter("e", "engineer") 3ni return qiladi.
 
 
-// A TASK ENGINEER
-function countLetter(letter, word) {
-    let count = 0;
-    for (let i = 0; i < word.length; i++) {
-      if (word[i] === letter) {
-        count++;
-      }
-    }
-    return count;
-  }
-   
-  console.log (countLetter("a", "banana")); 
+// // A TASK ENGINEER
+// function countLetter(letter, word) {
+//     let count = 0;
+//     for (let i = 0; i < word.length; i++) {
+//       if (word[i] === letter) {
+//         count++;
+//       }
+//     }
+//     return count;
+//   }
+//    console.log (countLetter("a", "banana")); 
 
+// // TASK  B
+// function countDigits(str) {
+//   // Raqamlarni aniqlash va sanash
+//   return str.split('').filter(char => !isNaN(char) && char !== ' ').length;
+// }
 
+// // Misol:
+// const result = countDigits("ad2a54y79wet0sfgb9");
+// console.log(result); // Natija: 7
 
 
 
