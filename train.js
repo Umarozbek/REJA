@@ -126,22 +126,6 @@
 // console.log(result); // Natija: 7
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // async function maslahatBering(a) {
 //   if (typeof a !== "number") throw new Error("Insert a number");
 //   else if (a <= 20) return list[0];
@@ -177,3 +161,47 @@
 // console.log(javob);
 // }
 // run();
+
+
+
+//  Task C
+
+
+
+// Class e'lon qilish
+// class Dokon {
+//     constructor(non, sut, cheese) {
+//         this.non = non;
+//         this.sut = sut;
+//         this.cheese = cheese;
+//     }
+//     // qoldiq tekshirish jarayoni buyerda dokondagi mahsulotlar tekshiriladi sotish va qabul bolimini ustuni xisoblanadi 
+//     qoldiq() {
+//         const now = new Date();
+//         const soat = now.getHours();
+//         const daqiqa = now.getMinutes();
+//         return `Hozir ${soat}:${daqiqa}da ${this.non} dona non, ${this.sut} litr sut va ${this.cheese}ta cheese mavjud`;
+//     } 
+//     // sotish jarayoni methodlar kelib sonlarini solishtirrib kkeladi agarda mahsulotlar yetarlicha bolsa sotuv amalga oshirladi agar mahsulotlar yetarli bolmasa sotuv amalga oshirlilmaydi \
+
+//     sotish(mahsulot, miqdor) {
+//         if (this[mahsulot] >= miqdor) {
+//             this[mahsulot] -= miqdor;
+//             console.log(`${miqdor}ta ${mahsulot} sotildi`);
+//         } else {
+//             console.log(`Uzur ertaga keling, hozir siz aytgan ${mahsulot} bizning dokonda mavjud emas!`);
+//         }
+//     }
+//     //// qabul qilinish yani dokonni mahsulotlar bilan toldirish qismi xisobalanadi 
+//     qabul(mahsulot, miqdor) {
+//         this[mahsulot] += miqdor;
+//         console.log(`${miqdor} ta ${mahsulot} qabul qilindi`);
+//     }
+// }
+
+// // Objectni  yaratish va metodlarni chaqirish NATIJA OLINDI VAQTLARI BILAN!
+// const dokon = new Dokon(7, 5, 6);
+// console.log(dokon.qoldiq());
+// dokon.sotish('non', 3);
+// dokon.qabul('cheese', 6);
+// console.log(dokon.qoldiq());

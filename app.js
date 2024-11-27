@@ -49,7 +49,11 @@ app.post("/create-item", (req, res) => {
         res.json(data.ops[0]);
     });
 });
-
+// app.post("/create-item", (req,res)=> {
+//     const id = req.body.id;
+//     console.log(id);
+//     res.end("done")
+// });
 
 // Delete oper
 app.post("/delete-item", (req, res) => {
