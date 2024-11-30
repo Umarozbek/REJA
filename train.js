@@ -205,3 +205,18 @@
 // dokon.sotish('non', 3);
 // dokon.qabul('cheese', 6);
 // console.log(dokon.qoldiq());
+
+
+
+// TASK D 
+function checkContent(str1, str2) {
+    const sortedStr1 = str1.split('').sort().join('');
+    const sortedStr2 = str2.split('').sort().join('');
+    return sortedStr1 === sortedStr2;
+}
+
+// Test misollar: 
+console.log(checkContent("mitgroup", "gmtiprou")); // true
+console.log(checkContent("apple", "pale"));         // false
+console.log(checkContent("hello", "olleh"));       // true
+console.log(checkContent("abc", "abcd"));          // false
