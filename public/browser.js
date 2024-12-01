@@ -99,7 +99,7 @@ function itemTemplate(item) {
             <button data-id="${item._id}" class="delete-me btn btn-danger btn-sm">ochirish</button>
           </div>`;
 }
-
+/// create field ses
 let createField = document.getElementById("create-field");
 
 
@@ -139,16 +139,23 @@ document.addEventListener("click", function(e){
   }
  let userInput = prompt("o'zgartirish kiriting", e.target.parentElement.parentElement.querySelector(".item-text").innerHTML);
  if(userInput) {
-  axios.post("/edit-item",{id: e.target.getAttribute("data-id"), new_input: userInput}).then(response => {
-  console.log(response);
-  e.target.parentElement.parentElement.querySelector(".item-text").innerHTML = userInput;
+  axios
+  .post("/edit-item",{id: e.target.getAttribute("data-id"), new_input: userInput})
+  .then(response => {
+    console.log(response);
+    e.target.parentElement.parentElement.
+    querySelector(".item-text").innerHTML = userInput;
   }).catch(err => {
   console.log("iltimos qaytadan harakat qiling");
   });
  }
 });
-document.getElementById("clean-all").addEventListener("click", function(){
-  axios.post("/delete-all", {delete_all: true}).then((response) =>{
+// clean all ses
+document.getElementById("clean-all")
+    .addEventListener("click", function(){
+  axios
+    .post("/delete-all", {delete_all: true})
+    .then((response) =>{
     alert(response.data.state);
     document.location.reload();
   });

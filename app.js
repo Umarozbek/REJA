@@ -112,7 +112,7 @@
 
 
 
-console.log("Hello world!");
+console.log("WEP SERVER ISHLADI!");
 const e = require("express");
 const express = require ("express");
 const app = express();
