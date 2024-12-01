@@ -209,14 +209,25 @@
 
 
 // TASK D 
-function checkContent(str1, str2) {
-    const sortedStr1 = str1.split('').sort().join('');
-    const sortedStr2 = str2.split('').sort().join('');
-    return sortedStr1 === sortedStr2;
+// function checkContent(str1, str2) {
+//     const sortedStr1 = str1.split('').sort().join('');
+//     const sortedStr2 = str2.split('').sort().join('');
+//     return sortedStr1 === sortedStr2;
+// }
+
+// // Test misollar: 
+// console.log(checkContent("mitgroup", "gmtiprou")); // true
+// console.log(checkContent("apple", "pale"));         // false
+// console.log(checkContent("hello", "olleh"));       // true
+// console.log(checkContent("abc", "abcd"));          // false
+
+
+//----- E-TASK -----//
+
+function getReverse(a) {
+    let result = a.split('').reverse().join('');
+    return result;
 }
 
-// Test misollar: 
-console.log(checkContent("mitgroup", "gmtiprou")); // true
-console.log(checkContent("apple", "pale"));         // false
-console.log(checkContent("hello", "olleh"));       // true
-console.log(checkContent("abc", "abcd"));          // false
+const answer = getReverse("Hello");
+console.log(answer);
