@@ -222,12 +222,67 @@
 // console.log(checkContent("abc", "abcd"));          // false
 
 
-//----- E-TASK -----//
+// //----- E-TASK -----//
 
-function getReverse(a) {
-    let result = a.split('').reverse().join('');
-    return result;
+// function getReverse(a) {
+//     let result = a.split('').reverse().join('');
+//     return result;
+// }
+
+// const answer = getReverse("Hello");
+// console.log(answer);
+
+// //          TASK F               // 
+// function findDoublers(str) {
+//     let charCount = {};
+
+//     for (let char of str) {
+//         if (charCount[char]) {
+//             return true; // Takrorlanish topildi
+//         } else {
+//             charCount[char] = 1;
+//         }
+//     }
+
+//     return false; // Takrorlanma yo'q
+// }
+
+// function findUnique(str) {
+//     let charCount = {};
+
+//     for (let char of str) {
+//         charCount[char] = (charCount[char] || 0) + 1;
+//     }
+
+//     for (let char in charCount) {
+//         if (charCount[char] === 1) {
+//             return true; // Bir marta uchragan harf mavjud
+//         }
+//     }
+
+//     return false; // Takrorlanmaydigan harf yo'q
+// }
+
+// // Chaqarish
+// console.log(findDoublers("anor")); // true
+// console.log(findUnique("lola"));   // true
+
+
+
+/////////              TASK G                         /////////////
+
+
+// Yagona parametrga ega function tuzing.
+// Va bu function parametr orqalik integer ma'lumot turlariga ega bo'lgan bir arrayni qabul qilsin.
+// Ushbu function bizga arrayning tarkibidagi birinchi eng katta qiymatning indeksini qaytarsin.
+
+// MASALAN: getHighestIndex([5, 21, 12, 21 ,8]); return qiladi 1 sonini
+// Yuqoridagi misolda, birinchi indeksda 21 joylashgan.
+// Va bu 21 soni arrayning tarkibidagi birinchi eng katta son hisobladi va bizga uning indeksi 1 qaytadi.
+function getHighestIndex(a) {
+    let max = Math.max(...a);
+    return a.indexOf(max);
 }
 
-const answer = getReverse("Hello");
-console.log(answer);
+const result = getHighestIndex([5, 21, 12, 25, 8]);
+console.log(result);
